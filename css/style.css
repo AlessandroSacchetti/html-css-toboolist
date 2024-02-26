@@ -40,11 +40,45 @@ body {
 }
 
 .sheet p {
-    display: inline;
+    display: inline-block;
 }
 
-.checkmark {}
 
-.checkmark .true {}
+.checkmark {
+    display: inline-block;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 2px;
+    width: 20px;
+    height: 20px;
+    line-height: 18px;
+    font-size: small;
+    vertical-align: middle;
+    margin-bottom: 10px;
+    text-align: center;
+}
 
-.checkmark .false {}
+.checkmark.false {
+    color: red;
+}
+
+.checkmark.true {
+    color: green;
+}
+
+.arrow {
+    font-size: small;
+    margin-right: 10px;
+}
+
+.type {
+    border-radius: 50%;
+    padding: 5px 10px;
+    margin: 10px;
+    color: white;
+    background-color: grey;
+}
+
+.editorial {
+    background-color: #38a9ff;
+}
